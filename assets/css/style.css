@@ -32,10 +32,14 @@ h2, h3{
     text-align: center;
 }
 
-h3{
+.servicios h3{
     color: var(--secundario);
     font-weight: 400;
     font-size: 3rem;
+}
+
+.servicios p{
+    font-family: 'Roboto', sans-serif;
 }
 
 p{
@@ -106,6 +110,7 @@ p{
 .hero{
     height: 45rem;
     background-image: url(../img/hero.jpg);
+    background-position: 50%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -124,6 +129,9 @@ p{
 
 .contenedor-hero{
     color: white;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: rgba(33, 33, 33, .5);
     position: relative;
     z-index: 1;
     text-align: center;
@@ -277,6 +285,7 @@ p{
 
 .project__info p{
     font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
     text-align: justify;
     margin: 1rem;
 }
@@ -368,6 +377,45 @@ form legend{
 .enviar{
     display: flex;
     justify-content: flex-end;
+}
+
+/* REDES    */
+.network-container{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-net{
+    border-radius: 2rem;
+    margin: 2rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+.card-net p{
+    margin: 2rem;
+    text-align: center;
+}
+
+.card-net p i{
+    color: var(--secundario);
+}
+
+.card-net i{
+    color: var(--oscuro);
+}
+
+@media (max-width:648px){
+    .card-net{
+        margin: 2rem auto;
+    }
 }
 
 /* UTILITIES    */

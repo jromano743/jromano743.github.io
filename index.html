@@ -7,28 +7,30 @@
     <title>Freelancer</title>
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <header class="site-header">
         <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Nosotros</a>
+            <a href="#aboutMe">¿Quien soy?</a>
             <a href="#projects">Proyectos</a>
-            <a href="#" id="cv-button">Descargar CV</a>
+            <a href="#networks">Redes</a>
+            <a href="./public/CV - Juan Manuel.pdf" id="cv-button" target="_blank">Descargar CV</a>
         </nav>
     </header>
 
     <div class="hero">
         <div class="contenedor-hero">
-            <h1>Game Design and Web Design</h1>
+            <h1>Juan M. Romano</h1>
+            <h2>Game Design and Web Design</h2>
             <p><i class="fas fa-map-marker-alt"></i>Santiago del estero, Argentina</p>
-            <a href="#" class="boton">Contactar</a>
+            <a target="_blank" href="mailto:jromano743@gmail.com" class="boton" >Contactar</a>
         </div>
     </div>
     <div class="contenedor">
-        <main class="servicios">
+        <main class="servicios" id="aboutMe">
             <h2>¿Quien soy?</h2>
             <div>
                 <p>
@@ -72,9 +74,7 @@
                             <div>
                                 <h3>Bot Beaters</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum libero dolor ex dolorem
-                                    veritatis et, illo expedita nulla quis earum at non, temporibus culpa sequi nam nesciunt
-                                    delectus harum vitae.
+                                    Un bot de Discord. La idea surgio hace tiempo cuando queria usar un viejo programa que otorgaba de forma aleatoria las posiciones de un videojuego. Lo lleve a un bot para que cualquiera lo pueda usar.
                                 </p>
                             </div>
                             <div class="project__button">
@@ -93,9 +93,7 @@
                             <div>
                                 <h3>Juego - Simon dice</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum libero dolor ex dolorem
-                                    veritatis et, illo expedita nulla quis earum at non, temporibus culpa sequi nam nesciunt
-                                    delectus harum vitae.
+                                    Un juego de Simon dice implementado con Javascript.
                                 </p>
                             </div>
                             <div class="project__button">
@@ -114,9 +112,7 @@
                             <div>
                                 <h3>Pomodoro</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum libero dolor ex dolorem
-                                    veritatis et, illo expedita nulla quis earum at non, temporibus culpa sequi nam nesciunt
-                                    delectus harum vitae.
+                                    Un reloj pomodoro implementado con Javascript. Cuenta 25 minutos en los cuales deberás concentrarte en tu actividad.
                                 </p>
                             </div>
                             <div class="project__button">
@@ -135,9 +131,7 @@
                             <div>
                                 <h3>Aplicacion de tareas</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum libero dolor ex dolorem
-                                    veritatis et, illo expedita nulla quis earum at non, temporibus culpa sequi nam nesciunt
-                                    delectus harum vitae.
+                                    Una simple lista de tareas implementada con Javascript, utiliza el local storage para guardar las tareas aun si el navegador se cierra.
                                 </p>
                             </div>
                             <div class="project__button">
@@ -150,36 +144,55 @@
                 <!--END ITEM-->
             </div>
         </section>
-        <!--
-            <section id="contacto" class="contacto">
-                <h2>Contacto</h2>
-                <form action="#">
-                    <legend>Contactanos llenando todos los campos</legend>
-
-                    <div class="contenedor-campos">
-                        <div class="campo">
-                            <label for="">Nombre</label>
-                            <input type="text" name="nombre" placeholder="Nombre">
-                        </div>
-                        <div class="campo">
-                            <label for="">Telefono</label>
-                            <input type="tel" name="telefono" placeholder="Telefono">
-                        </div>
-                        <div class="campo w-100">
-                            <label for="">Correo</label>
-                            <input type="email" name="email" placeholder="E-Mail">
-                        </div>
-                        <div class="campo w-100">
-                            <label for="">Mensaje:</label>
-                            <textarea></textarea>
-                        </div>
-                    </div>
-                    <div class="enviar">
-                        <input type="submit" class="boton" value="Enviar">
-                    </div>
-                </form>
-            </section>
-        -->
+        <section class="networks" id="networks">
+            <h2>Mis redes</h2>
+            <div class="network-container">
+                <!--CARD - LINKEDIN-->
+                <div class="card-net">
+                    <h3><i class="fab fa-linkedin"></i>  LinkedIn</h3>
+                    <p>Juan M. Romano Siriani &nbsp
+                        <a href="https://www.linkedin.com/in/juanma-rs/" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </p>
+                </div>
+                <!--CARD - ITCHIO-->
+                <div class="card-net">
+                    <h3><i class="fab fa-itch-io"></i>  Itchio</h3>
+                    <p>jromano743 &nbsp
+                        <a href="https://jromano743.itch.io/" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </p>
+                </div>
+                <!--CARD - GitHub-->
+                <div class="card-net">
+                    <h3><i class="fab fa-github"></i>  GitHub</h3>
+                    <p>jromano743 &nbsp
+                        <a href="https://github.com/jromano743" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </p>
+                </div>
+                <!--CARD - Twitter-->
+                <div class="card-net">
+                    <h3><i class="fab fa-twitter"></i></i>  Twitter</h3>
+                    <p>@Juanma__RS &nbsp <a href="https://github.com/jromano743" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </p>
+                </div>
+                <!--CARD - Twitch-->
+                <div class="card-net">
+                    <h3><i class="fab fa-twitch"></i>  Twitch</h3>
+                    <p>Juanma_RS_ &nbsp
+                        <a href="https://www.twitch.tv/juanma_rs_" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 </html>
