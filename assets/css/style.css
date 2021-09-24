@@ -236,12 +236,19 @@ p{
 
 @media screen and (max-width: 839px){
     .project__item{
+        height: 35rem;
         width: 85vw;
     }
 }
 
+@media screen and (max-width: 426px){
+    .project__item{
+        height: 40rem;
+    }
+}
+
 .project__box{
-    width: inherit;
+    width: 100%;
     height: inherit;
 }
 
